@@ -1,0 +1,12 @@
+/* line 1, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/clearfix.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  height: 0;
+  font-size: 0;
+  clear: both; }
+
+/* line 10, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/clearfix.scss */
+* {
+  box-sizing: border-box; }

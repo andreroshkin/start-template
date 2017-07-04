@@ -1,0 +1,20 @@
+{
+  "name": "ozstudio",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eroshkin A",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "",
+    "gulp-sass": "",
+    "gulp-connect": "",
+    "gulp-babel": "",
+    "gulp-notify": "",
+    "gulp-tinypng-compress": ""},
+  "devDependencies": {},
+  "description": ""
+}
