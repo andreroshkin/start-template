@@ -25,4 +25,4 @@ gulp.task('watch', getTask('watch'));
 gulp.task('connect', getTask('connect'));
 gulp.task('templates', getTask('templates'));
 
-gulp.task('default', ['connect', 'sass', 'templates', 'babel', 'watch']);
+gulp.task('dev', ['connect', 'sass', 'templates', 'babel', 'watch']);
