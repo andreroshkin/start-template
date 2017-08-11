@@ -1,6 +1,6 @@
 module.exports = function (gulp, plugins) {
     return () => {
-    gulp.src('sass/*.scss')
+    gulp.src('sass/main.scss')
       .pipe(plugins.sassSCSS({
         errLogToConsole: false,
         sourceComments: 'map'
