@@ -1,7 +1,7 @@
 module.exports = function (gulp, plugins) {
-    return function () {
+  return () => {
     plugins.connect.server({
-    livereload: true
-  });
-};
+      livereload: true
+    });
+  };
 };

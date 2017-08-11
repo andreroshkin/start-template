@@ -1,5 +1,5 @@
 module.exports = function (gulp, plugins) {
-    return function () {
+    return () => {
     options = {
       ignorePartials: true,
       batch: ['templates/partials'],

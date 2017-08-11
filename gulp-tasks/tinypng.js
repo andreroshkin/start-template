@@ -1,5 +1,5 @@
 module.exports = function (gulp, plugins) {
-    return function () {
+    return () => {
     gulp.src('images/src/**/*.{png,jpg,jpeg}')
       .pipe(plugins.tinypng({
         key: 'wzh-97aFdlvuXooHhHd1YT0F_G-fsGFI',

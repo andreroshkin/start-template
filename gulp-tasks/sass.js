@@ -1,5 +1,5 @@
 module.exports = function (gulp, plugins) {
-    return function () {
+    return () => {
     gulp.src('sass/*.scss')
       .pipe(plugins.sassSCSS({
         errLogToConsole: false,

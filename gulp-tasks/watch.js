@@ -1,5 +1,5 @@
 module.exports = function (gulp, plugins) {
-    return function () {
+    return () => {
         gulp.watch('*.html', ['html'])
         gulp.watch('templates/partials/*.hbs', ['templates'])
         gulp.watch('templates/*.hbs', ['templates'])
