@@ -1,5 +1,5 @@
 /* Slider */
-/* line 42, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 42, sass/slick-theme.scss */
 .slick-loading .slick-list {
   background: #fff url("./../images/ajax-loader.gif") center center no-repeat; }
 
@@ -12,7 +12,7 @@
   font-style: normal; }
 
 /* Arrows */
-/* line 63, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 63, sass/slick-theme.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -34,29 +34,29 @@
   -webkit-transition: .4s;
   transition: .4s;
   z-index: 6; }
-  /* line 84, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 84, sass/slick-theme.scss */
   .slick-prev svg path,
   .slick-next svg path {
     -webkit-transition: .4s;
     transition: .4s; }
-  /* line 87, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 87, sass/slick-theme.scss */
   .slick-prev:hover,
   .slick-next:hover {
     outline: none;
     color: transparent; }
-    /* line 90, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+    /* line 90, sass/slick-theme.scss */
     .slick-prev:hover svg path,
     .slick-next:hover svg path {
       fill: #f9d508; }
-    /* line 93, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+    /* line 93, sass/slick-theme.scss */
     .slick-prev:hover:before,
     .slick-next:hover:before {
       opacity: 1; }
-  /* line 97, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 97, sass/slick-theme.scss */
   .slick-prev.slick-disabled:before,
   .slick-next.slick-disabled:before {
     opacity: 0.25; }
-  /* line 100, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 100, sass/slick-theme.scss */
   .slick-prev:before,
   .slick-next:before {
     font-family: "slick";
@@ -67,48 +67,48 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
-/* line 111, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 111, sass/slick-theme.scss */
 .slick-prev {
   left: 0%;
   z-index: 2;
   background-size: 35px 35px;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
-  /* line 118, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 118, sass/slick-theme.scss */
   [dir="rtl"] .slick-prev {
     left: auto;
     right: -25px; }
-  /* line 122, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 122, sass/slick-theme.scss */
   .slick-prev:before {
     content: none; }
-    /* line 124, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+    /* line 124, sass/slick-theme.scss */
     [dir="rtl"] .slick-prev:before {
       content: none; }
 
-/* line 130, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 130, sass/slick-theme.scss */
 .slick-next {
   right: 0%;
   background-size: 35px 35px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   cursor: pointer; }
-  /* line 137, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 137, sass/slick-theme.scss */
   [dir="rtl"] .slick-next {
     left: -25px;
     right: auto; }
-  /* line 141, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 141, sass/slick-theme.scss */
   .slick-next:before {
     content: none; }
-    /* line 143, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+    /* line 143, sass/slick-theme.scss */
     [dir="rtl"] .slick-next:before {
       content: none; }
 
 /* Dots */
-/* line 152, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 152, sass/slick-theme.scss */
 .slick-dotted.slick-slider {
   margin-bottom: 30px; }
 
-/* line 156, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 156, sass/slick-theme.scss */
 .slick-dots {
   position: absolute;
   bottom: -32px;
@@ -118,7 +118,7 @@
   padding: 0;
   margin: 0;
   width: 100%; }
-  /* line 165, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+  /* line 165, sass/slick-theme.scss */
   .slick-dots li {
     position: relative;
     display: inline-block;
@@ -126,7 +126,7 @@
     width: 20px;
     padding: 0;
     cursor: pointer; }
-    /* line 172, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+    /* line 172, sass/slick-theme.scss */
     .slick-dots li button {
       border-radius: 30px;
       height: 15px;
@@ -143,13 +143,13 @@
       color: transparent;
       padding: 5px;
       cursor: pointer; }
-      /* line 188, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+      /* line 188, sass/slick-theme.scss */
       .slick-dots li button:hover, .slick-dots li button:focus {
         outline: none; }
-        /* line 191, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+        /* line 191, sass/slick-theme.scss */
         .slick-dots li button:hover:before, .slick-dots li button:focus:before {
           opacity: 1; }
-      /* line 195, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+      /* line 195, sass/slick-theme.scss */
       .slick-dots li button:before {
         position: absolute;
         top: 0;
@@ -165,23 +165,23 @@
         opacity: 0.25;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
-    /* line 212, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+    /* line 212, sass/slick-theme.scss */
     .slick-dots li.slick-active button:before {
       background: #eaeef3; }
 
-/* line 218, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 218, sass/slick-theme.scss */
 .slick-dots li.slick-active button {
   background: #ffffff;
   border: 2px solid #9e40ae; }
 
-/* line 222, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 222, sass/slick-theme.scss */
 .slick-dots li button {
   border-radius: 30px;
   height: 8px;
   width: 8px;
   background: #9e40ae; }
 
-/* line 229, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/slick-theme.scss */
+/* line 229, sass/slick-theme.scss */
 button.slick-arrow svg {
   width: 30px;
   height: 30px; }

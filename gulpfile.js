@@ -1,97 +1,28 @@
-var gulp = require('gulp'),
-    sassSCSS = require('gulp-sass'),
-    concat = require('gulp-concat'),
-    rename = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer'),
-    tinypng = require('gulp-tinypng-compress'),
-    handlebars = require('gulp-compile-handlebars'),
-    connect = require('gulp-connect'),
-    babel = require('gulp-babel'),
-    svgo = require('gulp-svgo'),
-    notify = require("gulp-notify");
+var gulp = require('gulp');
+var plugins = require('gulp-load-plugins')();
 
+plugins.tinypng = require('gulp-tinypng-compress');
+plugins.svgo = require('gulp-svgo');
+plugins.sassSCSS = require('gulp-sass');
+plugins.concat = require('gulp-concat');
+plugins.rename = require('gulp-rename');
+plugins.autoprefixer = require('gulp-autoprefixer');
+plugins.handlebars = require('gulp-compile-handlebars');
+plugins.connect = require('gulp-connect');
+plugins.babel = require('gulp-babel');
+plugins.notify = require('gulp-notify');
 
+function getTask(task) {
+  return require('./gulp-tasks/' + task)(gulp, plugins);
+}
 
-//минификация изображений
-gulp.task('tinypng', function () {
-	gulp.src('images/src/**/*.{png,jpg,jpeg}')
-		.pipe(tinypng({
-			key: 'wzh-97aFdlvuXooHhHd1YT0F_G-fsGFI',
-			sigFile: 'images/.tinypng-sigs',
-			log: true
-		}))
-		.pipe(gulp.dest('images'));
-});
+gulp.task('tinypng', getTask('tinypng'));
+gulp.task('svgo', getTask('svgo'));
+gulp.task('sass', getTask('sass'));
+gulp.task('babel', getTask('babel'));
+gulp.task('html', getTask('html'));
+gulp.task('watch', getTask('watch'));
+gulp.task('connect', getTask('connect'));
+gulp.task('templates', getTask('templates'));
 
-//svgo
-gulp.task('svgo', function () {
-	gulp.src('images/src/*.svg')
-    .pipe(svgo())
-		.pipe(gulp.dest('images'));
-});
-
-
-//sass
-gulp.task('sass', function(){
-	 gulp.src('sass/*.scss')
-	.pipe(sassSCSS({errLogToConsole: false, sourceComments: 'map'}))
-  .on('error', function(err) {
-            notify().write(err);
-            this.emit('end');
-        })
-  .pipe(autoprefixer())
-	.pipe(gulp.dest('css'))
-	.pipe(connect.reload());
-
-
-});
-
-gulp.task('babel', function () {
-  gulp.src('js/app.js')
-    .pipe(babel({
-            presets: ['es2015']
-        }))
-    .pipe(gulp.dest('dist'))
-});
-
-gulp.task('html', function () {
-  gulp.src('*.html')
-    .pipe(connect.reload());
-});
-
-gulp.task('watch', function(){
-  	gulp.watch('*.html', ['html'])
-    gulp.watch('templates/partials/*.hbs', ['templates'])
-    gulp.watch('templates/*.hbs', ['templates'])
- 	  gulp.watch('sass/*.scss', ['sass'])
-});
-
-
-gulp.task('connect', function() {
-  connect.server({
-    //root: 'app',
-    livereload: true
-  });
-});
-
-
-gulp.task('templates', function () {
-    options = {
-        ignorePartials: true,
-        batch : ['templates/partials'],
-    }
-    return gulp.src('templates/*.hbs')
-        .pipe(handlebars(null,options))
-        
-        .pipe(rename(function (path) {
-          path.extname = ".html"
-        })
-     )
-      .pipe(gulp.dest('./'))
-      .pipe(connect.reload());
-});
-
-
-gulp.task('default', [ 'connect','sass','templates', 'watch']);
-
-
+gulp.task('default', ['connect', 'sass', 'templates', 'babel', 'watch']);

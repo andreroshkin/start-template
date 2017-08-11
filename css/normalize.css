@@ -4,7 +4,7 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-/* line 9, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 9, sass/normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -18,7 +18,7 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-/* line 20, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 20, sass/normalize.scss */
 body {
   margin: 0; }
 
@@ -29,7 +29,7 @@ body {
  * 1. Add the correct display in Edge, IE, and Firefox.
  * 2. Add the correct display in IE.
  */
-/* line 33, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 33, sass/normalize.scss */
 article,
 aside,
 details,
@@ -48,7 +48,7 @@ summary {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 52, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 52, sass/normalize.scss */
 audio,
 canvas,
 progress,
@@ -58,7 +58,7 @@ video {
 /**
  * Add the correct display in iOS 4-7.
  */
-/* line 63, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 63, sass/normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -66,7 +66,7 @@ audio:not([controls]) {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 72, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 72, sass/normalize.scss */
 progress {
   vertical-align: baseline; }
 
@@ -74,7 +74,7 @@ progress {
  * Add the correct display in IE 10-.
  * 1. Add the correct display in IE.
  */
-/* line 81, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 81, sass/normalize.scss */
 template,
 [hidden] {
   display: none; }
@@ -85,7 +85,7 @@ template,
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-/* line 94, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 94, sass/normalize.scss */
 a {
   background-color: transparent;
   /* 1 */
@@ -96,7 +96,7 @@ a {
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
-/* line 104, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 104, sass/normalize.scss */
 a:active,
 a:hover {
   outline-width: 0; }
@@ -107,19 +107,20 @@ a:hover {
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 117, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 117, sass/normalize.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-/* line 127, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 127, sass/normalize.scss */
 b,
 strong {
   font-weight: inherit; }
@@ -127,7 +128,7 @@ strong {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 136, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 136, sass/normalize.scss */
 b,
 strong {
   font-weight: bolder; }
@@ -135,7 +136,7 @@ strong {
 /**
  * Add the correct font style in Android 4.3-.
  */
-/* line 145, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 145, sass/normalize.scss */
 dfn {
   font-style: italic; }
 
@@ -143,7 +144,7 @@ dfn {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 154, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 154, sass/normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -151,7 +152,7 @@ h1 {
 /**
  * Add the correct background and color in IE 9-.
  */
-/* line 163, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 163, sass/normalize.scss */
 mark {
   background-color: #ff0;
   color: #000; }
@@ -159,7 +160,7 @@ mark {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 172, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 172, sass/normalize.scss */
 small {
   font-size: 80%; }
 
@@ -167,7 +168,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 181, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 181, sass/normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -175,11 +176,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 189, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 189, sass/normalize.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 193, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 193, sass/normalize.scss */
 sup {
   top: -0.5em; }
 
@@ -188,14 +189,14 @@ sup {
 /**
  * Remove the border on images inside links in IE 10-.
  */
-/* line 204, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 204, sass/normalize.scss */
 img {
   border-style: none; }
 
 /**
  * Hide the overflow in IE.
  */
-/* line 212, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 212, sass/normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -205,7 +206,7 @@ svg:not(:root) {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 224, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 224, sass/normalize.scss */
 code,
 kbd,
 pre,
@@ -218,7 +219,7 @@ samp {
 /**
  * Add the correct margin in IE 8.
  */
-/* line 236, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 236, sass/normalize.scss */
 figure {
   margin: 1em 40px; }
 
@@ -226,9 +227,10 @@ figure {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 245, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 245, sass/normalize.scss */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -241,7 +243,7 @@ hr {
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 259, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 259, sass/normalize.scss */
 button,
 input,
 optgroup,
@@ -255,7 +257,7 @@ textarea {
 /**
  * Restore the font weight unset by the previous rule.
  */
-/* line 272, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 272, sass/normalize.scss */
 optgroup {
   font-weight: bold; }
 
@@ -263,7 +265,7 @@ optgroup {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 281, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 281, sass/normalize.scss */
 button,
 input {
   /* 1 */
@@ -273,7 +275,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 291, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 291, sass/normalize.scss */
 button,
 select {
   /* 1 */
@@ -284,7 +286,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 302, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 302, sass/normalize.scss */
 button,
 html [type="button"],
 [type="reset"],
@@ -295,7 +297,7 @@ html [type="button"],
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 313, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 313, sass/normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -306,7 +308,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 325, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 325, sass/normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -316,7 +318,7 @@ button:-moz-focusring,
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-/* line 336, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 336, sass/normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -328,9 +330,10 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 349, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 349, sass/normalize.scss */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -346,7 +349,7 @@ legend {
 /**
  * Remove the default vertical scrollbar in IE.
  */
-/* line 362, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 362, sass/normalize.scss */
 textarea {
   overflow: auto; }
 
@@ -354,10 +357,11 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-/* line 371, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 371, sass/normalize.scss */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -365,7 +369,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 381, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 381, sass/normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -374,7 +378,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 391, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 391, sass/normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -384,7 +388,7 @@ textarea {
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
-/* line 400, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 400, sass/normalize.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -392,7 +396,7 @@ textarea {
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
-/* line 409, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 409, sass/normalize.scss */
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54; }
@@ -401,7 +405,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 419, c:/Users/Amadreh/Desktop/Workflow/empty_project/sass/normalize.scss */
+/* line 419, sass/normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
