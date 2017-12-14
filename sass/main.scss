@@ -1,18 +1,23 @@
-@import 'normalize';
-@import 'clearfix';
-@import 'modal';
-@import 'burger';
-@import 'slick';
-@import 'slick-theme';
-@import 'lightgallery';
-$sans: 'Open Sans',
-sans-serif;
+@import 'base/clearfix';
+@import 'base/normalize';
+@import 'vendors/slick';
+@import 'vendors/slick-theme';
+
 body {}
 
 img {
     max-width: 100%;
 }
+.main-content{
+    display: flex;
+}
+
+$opensans: 'Open Sans', sans-serif;
+$roboto: 'Roboto Slab', serif;
 
 
+@import 'pages/home';
+@import 'components/buttons';
 
+@import 'layout/header';
 @import 'media-requests';
