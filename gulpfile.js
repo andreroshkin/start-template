@@ -11,6 +11,7 @@ plugins.handlebars = require('gulp-compile-handlebars');
 plugins.connect = require('gulp-connect');
 plugins.babel = require('gulp-babel');
 plugins.notify = require('gulp-notify');
+plugins.cssnano = require('gulp-cssnano');
 
 function getTask(task) {
   return require('./gulp-tasks/' + task)(gulp, plugins);
@@ -24,5 +25,6 @@ gulp.task('html', getTask('html'));
 gulp.task('watch', getTask('watch'));
 gulp.task('connect', getTask('connect'));
 gulp.task('templates', getTask('templates'));
+gulp.task('mincss', getTask('mincss'));
 
 gulp.task('default', ['connect', 'sass', 'templates', 'babel', 'watch']);
