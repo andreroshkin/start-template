@@ -13,6 +13,11 @@ plugins.babel = require('gulp-babel');
 plugins.notify = require('gulp-notify');
 plugins.cssnano = require('gulp-cssnano');
 
+plugins.webpackStream  = require('webpack-stream');
+plugins.webpack = require('webpack');
+
+
+
 function getTask(task) {
   return require('./gulp-tasks/' + task)(gulp, plugins);
 }
@@ -26,5 +31,7 @@ gulp.task('watch', getTask('watch'));
 gulp.task('connect', getTask('connect'));
 gulp.task('templates', getTask('templates'));
 gulp.task('mincss', getTask('mincss'));
+gulp.task('webpack', getTask('webpack'));
 
-gulp.task('default', ['connect', 'sass', 'templates', 'babel', 'watch']);
+
+gulp.task('default', ['connect', 'sass', 'templates', 'webpack', 'watch']);

@@ -5,6 +5,6 @@ module.exports = function (gulp, plugins) {
         gulp.watch('templates/*.hbs', ['templates'])
         gulp.watch('sass/*.scss', ['sass'])
         gulp.watch('sass/*/*.scss', ['sass'])
-        gulp.watch('js/src/*.js', ['babel'])
+        gulp.watch('js/src/*.js', ['webpack'])
     };
 };

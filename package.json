@@ -9,18 +9,25 @@
   "license": "ISC",
   "dependencies": {
     "babel-cli": "",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-es2015": "",
+    "babel-preset-latest": "^6.24.1",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "",
     "gulp-babel": "",
+    "gulp-compile-handlebars": "",
     "gulp-concat": "",
     "gulp-connect": "",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-load-plugins": "",
     "gulp-notify": "",
     "gulp-rename": "",
     "gulp-sass": "",
     "gulp-svgo": "",
     "gulp-tinypng-compress": "",
-    "gulp-compile-handlebars": "",
-    "gulp-load-plugins": ""
+    "webpack": "^3.11.0",
+    "webpack-stream": "^4.0.1"
   },
   "devDependencies": {
     "babel-core": "",
