@@ -13,6 +13,8 @@ plugins.notify = require('gulp-notify');
 plugins.cssnano = require('gulp-cssnano');
 plugins.twig  = require('gulp-twig');
 plugins.path = require('path'),
+plugins.fs = require('fs');
+plugins.data = require('gulp-data');
 plugins.webpackStream  = require('webpack-stream');
 plugins.webpack = require('webpack');
 

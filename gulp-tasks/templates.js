@@ -1,10 +1,10 @@
 module.exports = function (gulp, plugins) {
   return () => {
     gulp.src(['templates/*.twig'])
+    .pipe(plugins.data(function() {
+        return JSON.parse(plugins.fs.readFileSync('json/global.json'));
+    }))
     .pipe(plugins.twig({
-        data: {
-            title: 'hello'
-        },
         includes: [
             'templates/partials/*.twig',
         ],
@@ -12,8 +12,6 @@ module.exports = function (gulp, plugins) {
             return plugins.path.relative('templates', filePath);
         }
     }))
-
-
       .pipe(plugins.rename(function (path) {
         path.extname = ".html"
       }))
