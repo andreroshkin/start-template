@@ -16,7 +16,6 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "",
     "gulp-babel": "",
-    "gulp-compile-handlebars": "",
     "gulp-concat": "",
     "gulp-connect": "",
     "gulp-cssnano": "^2.1.2",

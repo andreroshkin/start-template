@@ -7,7 +7,6 @@ plugins.sassSCSS = require('gulp-sass');
 plugins.concat = require('gulp-concat');
 plugins.rename = require('gulp-rename');
 plugins.autoprefixer = require('gulp-autoprefixer');
-plugins.handlebars = require('gulp-compile-handlebars');
 plugins.connect = require('gulp-connect');
 plugins.babel = require('gulp-babel');
 plugins.notify = require('gulp-notify');
