@@ -25,6 +25,7 @@
     "gulp-rename": "",
     "gulp-sass": "",
     "gulp-svgo": "",
+    "gulp-twig": "^1.2.0",
     "gulp-tinypng-compress": "",
     "webpack": "^3.11.0",
     "webpack-stream": "^4.0.1"

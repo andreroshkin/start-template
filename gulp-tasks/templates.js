@@ -1,16 +1,27 @@
 module.exports = function (gulp, plugins) {
-    return () => {
-    options = {
-      ignorePartials: true,
-      batch: ['templates/partials'],
-    }
-    return gulp.src('templates/*.hbs')
-      .pipe(plugins.handlebars(null, options))
-  
+  return () => {
+    gulp.src(['templates/*.twig'])
+    .pipe(plugins.twig({
+        data: {
+            title: 'hello'
+        },
+        includes: [
+            'templates/partials/*.twig',
+        ],
+        getIncludeId: function(filePath) {
+            return plugins.path.relative('templates', filePath);
+        }
+    }))
+
+
       .pipe(plugins.rename(function (path) {
         path.extname = ".html"
       }))
       .pipe(gulp.dest('./'))
       .pipe(plugins.connect.reload());
-  };
 };
+};
+
+
+
+

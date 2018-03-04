@@ -9,8 +9,7 @@
 
 /* line 10, sass/base/clearfix.scss */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -243,8 +242,7 @@ figure {
  */
 /* line 245, sass/base/normalize.scss */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -346,8 +344,7 @@ fieldset {
  */
 /* line 349, sass/base/normalize.scss */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -374,8 +371,7 @@ textarea {
 /* line 371, sass/base/normalize.scss */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -431,14 +427,12 @@ textarea {
 .slick-slider {
   position: relative;
   display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent; }
 
@@ -547,13 +541,11 @@ textarea {
   padding: 0;
   border: none;
   outline: none;
-  -webkit-transition: .4s;
   transition: .4s;
   z-index: 6; }
   /* line 84, sass/vendors/slick-theme.scss */
   .slick-prev svg path,
   .slick-next svg path {
-    -webkit-transition: .4s;
     transition: .4s; }
   /* line 87, sass/vendors/slick-theme.scss */
   .slick-prev:hover,
@@ -708,6 +700,4 @@ img {
 
 /* line 11, sass/main.scss */
 .main-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }

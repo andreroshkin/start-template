@@ -12,7 +12,8 @@ plugins.connect = require('gulp-connect');
 plugins.babel = require('gulp-babel');
 plugins.notify = require('gulp-notify');
 plugins.cssnano = require('gulp-cssnano');
-
+plugins.twig  = require('gulp-twig');
+plugins.path = require('path'),
 plugins.webpackStream  = require('webpack-stream');
 plugins.webpack = require('webpack');
 
