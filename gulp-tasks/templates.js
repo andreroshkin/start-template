@@ -1,8 +1,8 @@
 module.exports = function (gulp, plugins) {
     return () => {
-      gulp.src(['templates/*.twig'])
+      gulp.src(['views/*.twig'])
       .pipe(plugins.data(function() {
-          return JSON.parse(plugins.fs.readFileSync('json/global.json'));
+          return JSON.parse(plugins.fs.readFileSync('config/global.json'));
       }))
       .on('error', function (err) {
           plugins.notify().write(err);
@@ -10,10 +10,10 @@ module.exports = function (gulp, plugins) {
       })
       .pipe(plugins.twig({
           includes: [
-              'templates/partials/*.twig',
+              'views/partials/*.twig',
           ],
           getIncludeId: function(filePath) {
-              return plugins.path.relative('templates', filePath);
+              return plugins.path.relative('views', filePath);
           }
       }))
       .on('error', function (err) {

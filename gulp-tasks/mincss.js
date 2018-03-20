@@ -1,11 +1,11 @@
 module.exports = function (gulp, plugins) {
     return () => {
-      gulp.src('css/main.css')
+      gulp.src('assets/css/main.css')
       .pipe(plugins.cssnano())
       .pipe(plugins.rename({
         suffix: '.min'
       }))
-      .pipe(gulp.dest('css/'))
+      .pipe(gulp.dest('assets/css/'))
     };
 };
 

@@ -1,6 +1,6 @@
 module.exports = function (gulp, plugins) {
     return () =>{
-    gulp.src('js/src/app.js')
+    gulp.src('assets/js/src/app.js')
       .pipe(plugins.babel({
         "presets": ["es2015"],
         "comments": false

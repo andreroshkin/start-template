@@ -2,7 +2,7 @@ module.exports = function (gulp, plugins) {
   return () => {
     setTimeout(
       () => {
-        gulp.src('sass/main.scss')
+        gulp.src('assets/scss/main.scss')
           .pipe(plugins.sassSCSS({
             errLogToConsole: false,
             sourceComments: 'map'
@@ -12,7 +12,7 @@ module.exports = function (gulp, plugins) {
             this.emit('end');
           })
           .pipe(plugins.autoprefixer())
-          .pipe(gulp.dest('css'))
+          .pipe(gulp.dest('assets/css'))
           .pipe(plugins.connect.reload());
       }, 500
     )
