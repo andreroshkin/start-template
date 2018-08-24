@@ -1,7 +1,26 @@
-@import 'base/clearfix';
 @import 'base/normalize';
-@import 'vendors/slick';
-@import 'vendors/slick-theme';
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    height: 0;
+    font-size: 0;
+    clear: both
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 
 body {}
 
@@ -13,11 +32,11 @@ img {
 }
 
 $opensans: 'Open Sans', sans-serif;
-$roboto: 'Roboto Slab', serif;
+
 
 
 @import 'pages/home';
 @import 'components/buttons';
-
 @import 'layout/header';
+@import 'layout/footer';
 @import 'media-requests';
