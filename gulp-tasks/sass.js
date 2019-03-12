@@ -5,15 +5,16 @@ module.exports = function (gulp, plugins) {
         gulp.src('assets/scss/main.scss')
           .pipe(plugins.sassSCSS({
             errLogToConsole: false,
-            sourceComments: 'map'
+            outputStyle: 'compressed'
           }))
           .on('error', function (err) {
             plugins.notify().write(err);
             this.emit('end');
           })
+          .pipe(plugins.postcss([plugins.cssvariables()]))
           .pipe(plugins.autoprefixer())
           .pipe(gulp.dest('assets/css'))
-          .pipe(plugins.connect.reload());
+          .pipe(plugins.browserSync.stream());
       }, 500
     )
   };

@@ -1,14 +1,5 @@
 @import 'base/normalize';
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    content: " ";
-    height: 0;
-    font-size: 0;
-    clear: both
-}
-
 html {
     box-sizing: border-box;
     height: 100%;
@@ -28,7 +19,7 @@ img {
     max-width: 100%;
 }
 .main-content{
-    display: flex;
+    
 }
 
 $opensans: 'Open Sans', sans-serif;

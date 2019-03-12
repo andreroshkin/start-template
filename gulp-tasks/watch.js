@@ -1,6 +1,5 @@
 module.exports = function (gulp, plugins) {
     return () => {
-        gulp.watch('*.html', ['html'])
         gulp.watch('views/partials/*.twig', ['templates'])
         gulp.watch('views/*.twig', ['templates'])
         gulp.watch('assets/scss/*.scss', ['sass'])
