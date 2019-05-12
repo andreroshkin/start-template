@@ -1,8 +1,9 @@
-import path    from 'path'
-import webpack from 'webpack'
-import process from 'process'
+import path from 'path';
+import webpack from 'webpack';
+import process from 'process';
+import WriteFilePlugin from 'write-file-webpack-plugin';
 
-const isProduction = (process.env.NODE_ENV === 'production')
+const isProduction = (process.env.NODE_ENV === 'production');
 
 let config = {
 
@@ -36,19 +37,43 @@ let config = {
     },
 
     module: {
-        rules: [{
-            test: /\.vue$/,
-            loader: 'vue-loader'
-        }]
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /(node_modules)/,
+                loader: 'babel-loader',
+                query: {
+                    presets: [
+                        ['latest', {
+                            modules: false
+                        }],
+                    ],
+                },
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
+            }
+        ]
     },
 
     plugins: isProduction ? [
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': '"production"'
         }),
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin(),
+        new WriteFilePlugin()
     ] : [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new WriteFilePlugin()
     ]
 }
 
@@ -57,12 +82,17 @@ function scripts() {
 
     return new Promise(resolve => webpack(config, (err, stats) => {
 
-        if(err) console.log('Webpack', err)
+        if (err) console.log('Webpack', err)
 
-        console.log(stats.toString({ /* stats options */ }))
+        console.log(stats.toString({
+            /* stats options */
+        }))
 
         resolve()
     }))
 }
 
-module.exports = { config, scripts }
+module.exports = {
+    config,
+    scripts
+}
