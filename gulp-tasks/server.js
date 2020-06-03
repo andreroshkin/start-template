@@ -1,4 +1,4 @@
-import gulp    from 'gulp'
+import gulp from 'gulp'
 import Browser from 'browser-sync'
 import webpack from 'webpack'
 import webpackDevMiddleware from 'webpack-dev-middleware'
@@ -10,26 +10,24 @@ const browser = Browser.create()
 const bundler = webpack(webpackConfig)
 
 function server() {
-    let config = {
-        server: './',
-        index: 'home.html',
-        injectChanges: true,
-        baseDir: "../",
-        open: false,
-        files: [
-            './css/*.css'
-        ],
-        middleware: [
-            webpackDevMiddleware(bundler, { 
-                stats: {colors: true}
-             }),
-            webpackHotMiddleware(bundler)
-        ],
-    }
+  let config = {
+    server: './',
+    index: 'home.html',
+    injectChanges: true,
+    baseDir: '../',
+    open: false,
+    files: ['./css/*.css'],
+    middleware: [
+      webpackDevMiddleware(bundler, {
+        stats: { colors: true }
+      }),
+      webpackHotMiddleware(bundler)
+    ]
+  }
 
-    browser.init(config)
+  browser.init(config)
 
-    gulp.watch('assets/js/src/*.js').on('change', () => browser.reload())
+  gulp.watch('assets/js/src/*.js').on('change', () => browser.reload())
 }
 
 module.exports = { browser, server }

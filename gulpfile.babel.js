@@ -1,9 +1,9 @@
 import gulp from 'gulp';
 
-import { scripts } from './webpack';
-import { server, browser }  from './server';
-import { styles }  from './styles';
-import { templates }  from './templates';
+import { scripts } from './gulp-tasks/webpack';
+import { server, browser }  from './gulp-tasks/server';
+import { styles }  from './gulp-tasks/styles';
+import { templates }  from './gulp-tasks/templates';
 
 function watchFiles() {
     gulp.watch('./views/partials/*.twig', templates);
