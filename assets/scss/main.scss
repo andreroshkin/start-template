@@ -1,4 +1,4 @@
-@import 'base/normalize';
+@import 'normalize';
 
 html {
     box-sizing: border-box;
@@ -12,7 +12,6 @@ html {
     box-sizing: inherit;
 }
 
-
 body {
     background: #fff;
 }
@@ -20,16 +19,10 @@ body {
 img {
     max-width: 100%;
 }
-.main-content{
-    
-}
-
-$opensans: 'Open Sans', sans-serif;
 
 
 
-@import 'pages/home';
-@import 'components/buttons';
-@import 'layout/header';
-@import 'layout/footer';
+@import 'buttons';
+@import 'header';
+@import 'footer';
 @import 'media-requests';
