@@ -4,7 +4,7 @@
   "version": "3.1.0",
   "description": "start template",
   "scripts": {
-    "dev": "gulp"
+    "dev": "set NODE_ENV=development && gulp"
   },
   "license": "ISC",
   "devDependencies": {

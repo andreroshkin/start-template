@@ -6,10 +6,7 @@ import WriteFilePlugin from 'write-file-webpack-plugin'
 const isProduction = process.env.NODE_ENV === 'production'
 
 let config = {
-  // I would recommend using different config variables
-  // depending on the eviroment.
-  // The package 'webpack-merge' can help with that.
-  // This tenary setup is just for simplicity sake.
+  mode: isProduction ? 'production' : 'development',
   entry: isProduction
     ? {
         main: './js/src/app.js',
